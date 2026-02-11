@@ -224,6 +224,7 @@ export interface Page {
 export interface Post {
   id: string;
   title: string;
+  prueba: 'auto' | 'manual';
   heroImage?: (string | null) | Media;
   content: {
     root: {
@@ -1191,6 +1192,7 @@ export interface FormBlockSelect<T extends boolean = true> {
  */
 export interface PostsSelect<T extends boolean = true> {
   title?: T;
+  prueba?: T;
   heroImage?: T;
   content?: T;
   relatedPosts?: T;

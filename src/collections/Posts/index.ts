@@ -72,6 +72,22 @@ export const Posts: CollectionConfig<'posts'> = {
       required: true,
     },
     {
+      name: 'prueba',
+      type: 'select',
+      defaultValue: 'auto',
+      required: true,
+      options: [
+        {
+          label: 'Auto-generate',
+          value: 'auto',
+        },
+        {
+          label: 'Manual',
+          value: 'manual',
+        },
+      ],
+    },
+    {
       type: 'tabs',
       tabs: [
         {
