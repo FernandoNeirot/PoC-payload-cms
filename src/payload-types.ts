@@ -803,6 +803,8 @@ export interface Project {
   title: string;
   description?: string | null;
   clientName?: string | null;
+  banner?: (string | null) | Media;
+  images?: (string | Media)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1408,6 +1410,8 @@ export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   description?: T;
   clientName?: T;
+  banner?: T;
+  images?: T;
   updatedAt?: T;
   createdAt?: T;
 }

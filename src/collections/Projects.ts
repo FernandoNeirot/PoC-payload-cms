@@ -19,5 +19,16 @@ export const Projects: CollectionConfig = {
       name: 'clientName',
       type: 'text',
     },
+    {
+      name: 'banner',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
+      name: 'images',
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: true,
+    },
   ],
 }
